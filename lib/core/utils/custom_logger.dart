@@ -11,7 +11,6 @@ class CustomLogger {
     required String message,
     required DeviceLogLevel logLevel,
   }) {
-    // Log to console using logger library
     switch (logLevel) {
       case DeviceLogLevel.info:
         _logger.i('$tag.$subTag: $message');
@@ -31,7 +30,6 @@ class CustomLogger {
     }
   }
 
-  // Prettified logs in terminal
   static void logInfo(dynamic info) {
     _logger.i(info);
   }
