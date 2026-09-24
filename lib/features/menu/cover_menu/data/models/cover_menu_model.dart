@@ -12,23 +12,23 @@ class CoverMenuModel extends CoverMenu {
 
   factory CoverMenuModel.fromJson(Map<String, dynamic> json) {
     return CoverMenuModel(
-      bannerImage: json['bannerImage'],
-      logoImage: json['logoImage'],
-      productImage: json['productImage'],
-      headerText: json['headerText'],
-      buttonTextOne: json['buttonTextOne'],
-      buttonTextTwo: json['buttonTextTwo'],
+      bannerImage: json['banner_image'],
+      logoImage: json['logo_image'],
+      productImage: json['product_image'],
+      headerText: json['header_text'],
+      buttonTextOne: json['button_text_one'],
+      buttonTextTwo: json['button_text_two'],
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'bannerImage': bannerImage,
-      'logoImage': logoImage,
-      'productImage': productImage,
-      'headerText': headerText,
-      'buttonTextOne': buttonTextOne,
-      'buttonTextTwo': buttonTextTwo,
+      'banner_image': bannerImage,
+      'logo_image': logoImage,
+      'product_image': productImage,
+      'header_text': headerText,
+      'button_text_one': buttonTextOne,
+      'button_text_two': buttonTextTwo,
     };
   }
 }

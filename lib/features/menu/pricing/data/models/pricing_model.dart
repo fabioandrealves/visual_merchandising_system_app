@@ -12,7 +12,7 @@ class PricingModel extends Pricing {
     return PricingModel(
       logoImage: json['logo_image'],
       productImage: json['product_image'],
-      data: PricingDataModel.fromJson(json['pricing_data']),
+      data: PricingDataModel.fromJson(json['data']),
     );
   }
 
