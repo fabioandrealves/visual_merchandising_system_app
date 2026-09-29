@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/payment_footer.dart';
 import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/pricing_header.dart';
 import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/pricing_label.dart';
-import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/pricing_produt.dart';
+import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/pricing_product.dart';
 import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/pricing_section.dart';
 
-import '../../../../core/utils/percentage_extension.dart';
 import '../../../menu/pricing/domain/entities/pricing.dart';
 
 class PricingPage extends StatelessWidget {

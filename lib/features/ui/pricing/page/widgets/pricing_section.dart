@@ -15,7 +15,7 @@ class PricingSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (!data.hasInstallments) {
-      return EntirePriceBox(price: data.entirePrice);
+      return Container();
     } else {
       return Column(
         children: [
