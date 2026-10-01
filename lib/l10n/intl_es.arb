@@ -1,5 +1,10 @@
 {
   "@@locale": "es",
-  "hello": "Hola!",
-  "welcome": "Bem-vienda"
+  "product_1_cover_menu_header_text": "CAPTURA LA VIDA\\nSIN LÍMITES",
+  "product_1_cover_menu_button_text_one":"DESCUBRIR",
+  "product_1_cover_menu_button_text_two": "PRECIOS",
+  "product_1_pricing_label": "Precios",
+  "product_1_pricing_data_product_name": "Producto XYZ",
+  "product_1_pricing_data_payment_options": "Al contado o a plazos"
+
 }

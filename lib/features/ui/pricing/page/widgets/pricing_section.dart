@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../../menu/pricing/domain/entities/pricing_data.dart';
-import 'pricing_section/entire_price_box.dart';
 import 'pricing_section/installments_dropdown.dart';
 
 class PricingSection extends StatelessWidget {

@@ -1,11 +1,13 @@
 import 'pricing_data.dart';
 
 class Pricing {
+  final String label;
   final String logoImage;
   final String productImage;
   final PricingData data;
 
   const Pricing({
+    required this.label,
     required this.logoImage,
     required this.productImage,
     required this.data,

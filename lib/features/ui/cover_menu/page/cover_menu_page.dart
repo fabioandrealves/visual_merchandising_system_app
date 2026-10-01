@@ -7,13 +7,13 @@ import '../../../menu/pricing/domain/entities/pricing.dart';
 import 'body/cover_menu_body.dart';
 
 class CoverMenuPage extends StatelessWidget {
-  final CoverMenu menu;
+  final CoverMenu coverMenu;
   final Widget productMenu;
   final Pricing pricing;
 
   const CoverMenuPage({
     super.key,
-    required this.menu,
+    required this.coverMenu,
     required this.productMenu,
     required this.pricing,
   });
@@ -22,7 +22,7 @@ class CoverMenuPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CoverMenuBody(
-        menu: menu,
+        coverMenu: coverMenu,
         onExit: () {
           SystemNavigator.pop();
         },

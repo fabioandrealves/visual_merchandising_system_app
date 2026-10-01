@@ -37,4 +37,24 @@ class AppTextStyles {
         fontWeight: FontWeight.bold,
         color: Colors.black,
       );
+
+  static TextStyle pricingAppInstallmentsLabelTextStyle({
+    required double fontSize,
+  }) =>
+      TextStyle(
+        fontSize: fontSize,
+        fontFamily: "Gotham",
+        fontWeight: FontWeight.w400,
+        color: Colors.black,
+      );
+
+  static TextStyle pricingAppPaymentOptionsTextStyle({
+    required double fontSize,
+  }) =>
+      TextStyle(
+        fontSize: fontSize,
+        fontFamily: "Gotham",
+        fontWeight: FontWeight.w400,
+        color: Colors.white,
+      );
 }

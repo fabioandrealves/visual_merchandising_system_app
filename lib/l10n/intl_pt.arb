@@ -1,5 +1,9 @@
 {
   "@@locale": "pt",
-  "hello": "Olá",
-  "welcome": "Bem-vindo"
+  "product_1_cover_menu_header_text": "CAPTURE A VIDA\nSEM LIMITES",
+  "product_1_cover_menu_button_text_one": "DESCOBRIR",
+  "product_1_cover_menu_button_text_two": "PREÇOS",
+  "product_1_pricing_label": "Preços",
+  "product_1_pricing_data_product_name": "Produto XYZ",
+  "product_1_pricing_data_payment_options": "À vista ou parcelado"
 }

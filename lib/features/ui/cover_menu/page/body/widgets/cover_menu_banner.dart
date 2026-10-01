@@ -10,16 +10,18 @@ class CoverMenuBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      fit: StackFit.expand,
-      children: [
-        Image.asset(image, fit: BoxFit.cover),
-        Positioned(
-          top: 20,
-          right: 20,
-          child: CoverMenuExitButton(onPressed: onExit),
-        ),
-      ],
+    return Expanded(
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.asset(image, fit: BoxFit.cover),
+          Positioned(
+            top: 20,
+            right: 20,
+            child: CoverMenuExitButton(onPressed: onExit),
+          ),
+        ],
+      ),
     );
   }
 }

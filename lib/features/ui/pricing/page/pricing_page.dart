@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:visual_merchandising_system_app/core/localization/localization_acess.dart';
 import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/payment_footer.dart';
 import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/pricing_header.dart';
 import 'package:visual_merchandising_system_app/features/ui/pricing/page/widgets/pricing_label.dart';
@@ -26,9 +27,9 @@ class PricingPage extends StatelessWidget {
             child: Column(
               children: [
                 PricingHeader(logoImage: pricing.logoImage),
-                PricingLabel(),
+                PricingLabel(label: getElementLocalized(pricing.label)),
                 PricingProduct(
-                  productName: pricing.data.productName,
+                  productName: getElementLocalized(pricing.data.productName),
                   productImage: pricing.productImage,
                 ),
                 PricingSection(data: pricing.data),
@@ -36,7 +37,9 @@ class PricingPage extends StatelessWidget {
               ],
             ),
           ),
-          PaymentFooter(paymentOptions: pricing.data.paymentOptions),
+          PaymentFooter(
+            paymentOptions: getElementLocalized(pricing.data.paymentOptions),
+          ),
         ],
       ),
     );

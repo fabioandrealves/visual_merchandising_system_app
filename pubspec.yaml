@@ -38,12 +38,19 @@ dependencies:
     sdk: flutter
 
   intl_utils: ^2.8.16
+  logger: ^2.7.0
 
 flutter:
+  uses-material-design: true
   generate: true
   assets:
-    - assets/device.json
-
+    - assets/app_content.json
+    - assets/images/
+    - assets/images/cover_menu/
+    - assets/images/cover_menu/banner/
+    - assets/images/cover_menu/logo/
+    - assets/images/cover_menu/product/
+#    - assets/icons/
 
 dev_dependencies:
   flutter_test:

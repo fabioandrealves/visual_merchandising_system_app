@@ -1,5 +1,9 @@
 {
   "@@locale": "en",
-  "hello": "Hello",
-  "welcome": "Welcome"
+  "product_1_cover_menu_header_text": "CAPTURE LIFE\nWITHOUT LIMITS",
+  "product_1_cover_menu_button_text_one": "DISCOVER",
+  "product_1_cover_menu_button_text_two": "PRICING",
+  "product_1_pricing_label": "Pricing",
+  "product_1_pricing_data_product_name": "Product XYZ",
+  "product_1_pricing_data_payment_options": "Pay in full or in installments"
 }

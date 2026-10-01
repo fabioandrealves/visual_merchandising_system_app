@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:visual_merchandising_system_app/content/data/repositories/content_repository_impl.dart';
 import 'package:visual_merchandising_system_app/content/domain/usecases/get_app_content_use_case.dart';
+import 'package:visual_merchandising_system_app/features/menu/menu_wrapper.dart';
 
 import 'content/content_builder.dart';
 import 'content/data/datasource/content_local_datasource.dart';
@@ -21,6 +22,7 @@ class _HomeState extends State<Home> {
     dataSource: ContentLocalDataSource(),
     asset: 'assets/app_content.json',
   );
+  
 
   @override
   void didChangeDependencies() {
@@ -43,10 +45,13 @@ class _HomeState extends State<Home> {
     return ContentBuilder(
       getAppContent: _getAppContent,
       builder: (context, content) {
-        return CoverMenuPage(
-          menu: content.coverMenu,
-          productMenu: Container(color: Colors.blue),
-          pricing: content.pricing!,
+        return MenuWrapper(
+          shouldFallbackToEnglish: true,
+          homePage: content.pricing != null ? CoverMenuPage(
+            coverMenu: content.coverMenu,
+            productMenu: Container(color: Colors.blue),
+            pricing: content.pricing!,
+          ) : Container(color: Colors.blue,),
         );
       },
     );
